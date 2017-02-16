@@ -12,17 +12,22 @@ npm install
 ```
 
 ## start
-### frontend
-```
-npm start
-```
-this command starts a node server with live reload on `localhost:3000`
 
 ### server
 ```
 npm run start:server
 ```
 this command starts a node/express server on `localhost:4000`
+
+### frontend
+```
+npm start
+```
+this command starts a node server with live reload on `localhost:3000`
+
+## GraphiQL
+This repo also contains the graphiQL interface to test your queries.
+Just navigate to `localhost:4000` in your browser to find the interface.
 
 ## links
 - [incompose](https://github.com/zanettin/incompose)
