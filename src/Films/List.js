@@ -66,7 +66,7 @@ export default compose(
     renderComponent(Error),
   ),
 
-  // wile loading, we want to show a loading screen
+  // while loading, we want to show a loading screen
   // to our users, so we compose another branch
   // which checks the loading state
   branch(
