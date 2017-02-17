@@ -30,6 +30,7 @@ This repo also contains the graphiQL interface to test your queries.
 Just navigate to `localhost:4000` in your browser to find the interface.
 
 ## Links
+- [inferno js](https://infernojs.org/)
 - [incompose](https://github.com/zanettin/incompose)
 - [inferno-apollo](https://github.com/zanettin/inferno-apollo)
 - [create-inferno-app](https://github.com/infernojs/create-inferno-app)
