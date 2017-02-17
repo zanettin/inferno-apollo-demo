@@ -105,7 +105,7 @@ anymatch@^1.3.0:
     arrify "^1.0.0"
     micromatch "^2.1.5"
 
-apollo-client:
+apollo-client@^0.8.6:
   version "0.8.6"
   resolved "https://registry.yarnpkg.com/apollo-client/-/apollo-client-0.8.6.tgz#9aa18b03ec338f0a3804122df7f77493a10b72a0"
   dependencies:
@@ -472,7 +472,7 @@ babel-plugin-check-es2015-constants@^6.22.0, babel-plugin-check-es2015-constants
   dependencies:
     babel-runtime "^6.22.0"
 
-babel-plugin-inferno:
+babel-plugin-inferno@^1.9.0:
   version "1.9.0"
   resolved "https://registry.yarnpkg.com/babel-plugin-inferno/-/babel-plugin-inferno-1.9.0.tgz#b8f5b4591577f590d78bd18e2e3e8c8c5c1f6e73"
   dependencies:
@@ -1103,8 +1103,8 @@ caniuse-api@^1.5.2:
     lodash.uniq "^4.3.0"
 
 caniuse-db@^1.0.30000346, caniuse-db@^1.0.30000613, caniuse-db@^1.0.30000623:
-  version "1.0.30000623"
-  resolved "https://registry.yarnpkg.com/caniuse-db/-/caniuse-db-1.0.30000623.tgz#6e9dc4385d00a8f587efbb23fcbed7916f186e5d"
+  version "1.0.30000624"
+  resolved "https://registry.yarnpkg.com/caniuse-db/-/caniuse-db-1.0.30000624.tgz#554b87547895e36f5fe128f4b7448a2ea5bf2213"
 
 cardinal@^1.0.0:
   version "1.0.0"
@@ -2349,7 +2349,7 @@ graphql-anywhere@^2.0.0, graphql-anywhere@^2.1.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/graphql-anywhere/-/graphql-anywhere-2.2.0.tgz#652c3fa23a4a6cfeb98817512fb48100b97f3d5c"
 
-graphql-tag, graphql-tag@^1.1.1:
+graphql-tag@^1.1.1, graphql-tag@^1.2.4:
   version "1.2.4"
   resolved "https://registry.yarnpkg.com/graphql-tag/-/graphql-tag-1.2.4.tgz#90c59bea41378513fd7213dc92537fcd20e4570f"
 
@@ -2419,7 +2419,7 @@ hoek@2.x.x:
   version "2.16.3"
   resolved "https://registry.yarnpkg.com/hoek/-/hoek-2.16.3.tgz#20bb7403d3cea398e91dc4710a8ff1b8274a25ed"
 
-hoist-non-react-statics:
+hoist-non-react-statics@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/hoist-non-react-statics/-/hoist-non-react-statics-1.2.0.tgz#aa448cf0986d55cc40773b17174b7dd066cb7cfb"
 
@@ -2537,9 +2537,13 @@ imurmurhash@^0.1.4:
   version "0.1.4"
   resolved "https://registry.yarnpkg.com/imurmurhash/-/imurmurhash-0.1.4.tgz#9218b9b2b928a238b13dc4fb6b6d576f231453ea"
 
-incompose:
-  version "0.0.9"
-  resolved "https://registry.yarnpkg.com/incompose/-/incompose-0.0.9.tgz#951939d04ba9fb785324035586c85ae75a657ec4"
+incompose@^0.0.10:
+  version "0.0.10"
+  resolved "https://registry.yarnpkg.com/incompose/-/incompose-0.0.10.tgz#2324cfefe1b6d99242d7342bbdbec978d37ffe68"
+  dependencies:
+    inferno "^1.2.2"
+    inferno-component "^1.2.2"
+    inferno-create-element "^1.2.2"
 
 indexes-of@^1.0.1:
   version "1.0.1"
@@ -2549,18 +2553,14 @@ indexof@0.0.1:
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/indexof/-/indexof-0.0.1.tgz#82dc336d232b9062179d05ab3293a66059fd435d"
 
-inferno, inferno@^1.3.0-rc.3:
-  version "1.3.0-rc.3"
-  resolved "https://registry.yarnpkg.com/inferno/-/inferno-1.3.0-rc.3.tgz#0c5e01c4df3a629f8dad771ecdc612e1109c0c6b"
-  dependencies:
-    inferno-shared "^1.3.0-rc.3"
-    inferno-vnode-flags "^1.3.0-rc.1"
-
-inferno-apollo:
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/inferno-apollo/-/inferno-apollo-0.0.1.tgz#5a677849d560b246024294ae90ccd27d7d827528"
+inferno-apollo@^0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/inferno-apollo/-/inferno-apollo-0.0.2.tgz#9c3edda1e026ad2f8da32576ce065f34ee237050"
   dependencies:
     graphql-anywhere "^2.0.0"
+    hoist-non-react-statics "^1.2.0"
+    inferno "^1.3.0-rc.3"
+    inferno-compat "^1.3.0-rc.3"
     inferno-server "^1.3.0-rc.3"
     invariant "^2.2.1"
     lodash.flatten "^4.2.0"
@@ -2569,7 +2569,7 @@ inferno-apollo:
     lodash.pick "^4.4.0"
     object-assign "^4.0.1"
 
-inferno-compat:
+inferno-compat@^1.3.0-rc.3:
   version "1.3.0-rc.3"
   resolved "https://registry.yarnpkg.com/inferno-compat/-/inferno-compat-1.3.0-rc.3.tgz#a1514b9be99ed34ff3245f06e6d77889623b383c"
   dependencies:
@@ -2583,7 +2583,13 @@ inferno-compat:
     proptypes "0.14.4"
     rc-css-transition-group-modern "^2.1.6"
 
-inferno-component, inferno-component@^1.3.0-rc.3:
+inferno-component@^1.2.2:
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/inferno-component/-/inferno-component-1.2.2.tgz#aa0a1dd790d644805be3f2221c87aaa404792ebb"
+  dependencies:
+    inferno "1.2.2"
+
+inferno-component@^1.3.0-rc.3:
   version "1.3.0-rc.3"
   resolved "https://registry.yarnpkg.com/inferno-component/-/inferno-component-1.3.0-rc.3.tgz#808bc996568761150f3845677effcdce1d00a172"
   dependencies:
@@ -2598,7 +2604,13 @@ inferno-create-class@^1.3.0-rc.3:
     inferno-component "^1.3.0-rc.3"
     inferno-shared "^1.3.0-rc.3"
 
-inferno-create-element, inferno-create-element@^1.3.0-rc.3:
+inferno-create-element@^1.2.2:
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/inferno-create-element/-/inferno-create-element-1.2.2.tgz#99296b0e34965d799f4f6b6459ba7dec4b6a3b57"
+  dependencies:
+    inferno "1.2.2"
+
+inferno-create-element@^1.3.0-rc.3:
   version "1.3.0-rc.3"
   resolved "https://registry.yarnpkg.com/inferno-create-element/-/inferno-create-element-1.3.0-rc.3.tgz#5ea3778a9831e7881113c34d8e8878756f6f2eed"
   dependencies:
@@ -2619,7 +2631,7 @@ inferno-dev-utils@^0.7.0:
     sockjs-client "1.1.2"
     strip-ansi "3.0.1"
 
-inferno-scripts:
+inferno-scripts@0.13.2:
   version "0.13.2"
   resolved "https://registry.yarnpkg.com/inferno-scripts/-/inferno-scripts-0.13.2.tgz#41a01fad741018d1e96c6af760a32eff1c973521"
   dependencies:
@@ -2696,9 +2708,16 @@ inferno-vnode-flags@^1.3.0-rc.1, inferno-vnode-flags@1.3.0-rc.1:
   version "1.3.0-rc.1"
   resolved "https://registry.yarnpkg.com/inferno-vnode-flags/-/inferno-vnode-flags-1.3.0-rc.1.tgz#2f027cdb70db496708eeaaf30b54962b727adf85"
 
-inferno@^1.1.1, inferno@1.2.2:
+inferno@^1.1.1, inferno@^1.2.2, inferno@1.2.2:
   version "1.2.2"
   resolved "https://registry.yarnpkg.com/inferno/-/inferno-1.2.2.tgz#0094e4ed428db30184bfa348a5aa38211945e67d"
+
+inferno@^1.3.0-rc.3:
+  version "1.3.0-rc.3"
+  resolved "https://registry.yarnpkg.com/inferno/-/inferno-1.3.0-rc.3.tgz#0c5e01c4df3a629f8dad771ecdc612e1109c0c6b"
+  dependencies:
+    inferno-shared "^1.3.0-rc.3"
+    inferno-vnode-flags "^1.3.0-rc.1"
 
 inflight@^1.0.4:
   version "1.0.6"
@@ -4254,8 +4273,8 @@ postcss-zindex@^2.0.1:
     uniqs "^2.0.0"
 
 postcss@^5.0.10, postcss@^5.0.11, postcss@^5.0.12, postcss@^5.0.13, postcss@^5.0.14, postcss@^5.0.16, postcss@^5.0.2, postcss@^5.0.4, postcss@^5.0.5, postcss@^5.0.6, postcss@^5.0.8, postcss@^5.2.11, postcss@^5.2.13, postcss@^5.2.9:
-  version "5.2.13"
-  resolved "https://registry.yarnpkg.com/postcss/-/postcss-5.2.13.tgz#1be52a32cf2ef58c0d75f1aedb3beabcf257cef3"
+  version "5.2.14"
+  resolved "https://registry.yarnpkg.com/postcss/-/postcss-5.2.14.tgz#47b4fbde363fd4f81e547f7e0e43d6d300267330"
   dependencies:
     chalk "^1.1.3"
     js-base64 "^2.1.9"
@@ -5351,13 +5370,13 @@ whatwg-encoding@^1.0.1:
   dependencies:
     iconv-lite "0.4.13"
 
-whatwg-fetch, whatwg-fetch@^2.0.0, whatwg-fetch@2.0.2:
+whatwg-fetch@^2.0.0, whatwg-fetch@^2.0.2, whatwg-fetch@2.0.2:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/whatwg-fetch/-/whatwg-fetch-2.0.2.tgz#fe294d1d89e36c5be8b3195057f2e4bc74fc980e"
 
 whatwg-url@^4.3.0:
-  version "4.3.0"
-  resolved "https://registry.yarnpkg.com/whatwg-url/-/whatwg-url-4.3.0.tgz#92aaee21f4f2a642074357d70ef8500a7cbb171a"
+  version "4.4.0"
+  resolved "https://registry.yarnpkg.com/whatwg-url/-/whatwg-url-4.4.0.tgz#594f95781545c13934a62db40897c818cafa2e04"
   dependencies:
     tr46 "~0.0.3"
     webidl-conversions "^3.0.0"
