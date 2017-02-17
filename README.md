@@ -12,6 +12,7 @@ npm install
 ```
 
 ## Start
+Totally new to InfernoJS and/or graphQL? [Checkout my blog on medium](https://medium.com/@roman_zanettin/infernojs-meets-apollo-in-a-functional-way-15f1bebea34e#.c10ghd4dg)
 
 ### server
 ```
