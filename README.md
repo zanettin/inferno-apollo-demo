@@ -38,4 +38,4 @@ Just navigate to `localhost:4000` in your browser to find the interface.
 - [apollo client doc for react](http://dev.apollodata.com/react/queries.html)
 
 ## Contribution / Questions
-feel free to contib or concat me [on twitter](https://twitter.com/roman_zanettin)
+feel free to contribute or concat me [on twitter](https://twitter.com/roman_zanettin)
