@@ -1,5 +1,5 @@
 import Inferno from 'inferno';
-import FilmList from '../Films/List';
+import {Link} from 'inferno-router';
 import Logo from '../logo';
 import './App.css';
 
@@ -10,7 +10,10 @@ const App = (props) => (
       <h2>Welcome to Inferno with Apollo</h2>
     </div>
 
-    <FilmList />
+    <div><Link to='/'>home</Link></div>
+    <div><Link to='/films'>film list</Link></div>
+
+    {props.children}
 
   </div>
 );

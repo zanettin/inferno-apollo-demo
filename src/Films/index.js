@@ -31,6 +31,8 @@ const List = (props) => (
         props.data.allFilms.edges.map(renderFilm)
       }
     </ul>
+    <hr />
+    {props.children}
   </div>
 );
 
@@ -41,6 +43,7 @@ const query = gql`
     allFilms {
       edges {
         node {
+          id
           title
           director
         }
