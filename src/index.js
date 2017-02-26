@@ -3,8 +3,8 @@ import {ApolloProvider} from 'inferno-apollo';
 import client from './shared/graphql/apolloClient';
 import {Router} from 'inferno-router';
 import createBrowserHistory from 'history/createBrowserHistory';
-import routes from './createRoutes';
-import './index.css';
+import routes from './shared/createRoutes';
+import 'bootstrap/dist/css/bootstrap.css';
 
 const browserHistory = createBrowserHistory();
 

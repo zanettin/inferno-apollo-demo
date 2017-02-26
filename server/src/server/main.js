@@ -33,7 +33,7 @@ app.post('/graphql', (req, res) => {
   setTimeout(() => graphqlHTTP({
     schema    : swapiSchema,
     graphiql  : false,
-  })(req, res), 1000);
+  })(req, res), 2000);
 });
 
 // Requests to / shoud show graphiql interface

@@ -1,19 +1,29 @@
 import Inferno from 'inferno';
 import {Link} from 'inferno-router';
 import Logo from '../logo';
-import './App.css';
+import ApolloLogo from '../logo-apollo.png';
+import './styles.css';
 
 const App = (props) => (
-  <div className="App">
-    <div className="App-header">
+  <div className="container Wrapper">
+
+    {/* HEADER */}
+    <div className="jumbotron text-center">
       <Logo width="80" height="80"/>
-      <h2>Welcome to Inferno with Apollo</h2>
+      <img src={ApolloLogo} width="90" height="90" alt="apollo data" className="ApolloLogo" />
+      <h2>welcome to the infernoJS starter app</h2>
     </div>
 
-    <div><Link to='/'>home</Link></div>
-    <div><Link to='/films'>film list</Link></div>
+    {/* NAVIGATION */}
+    <ul className="nav nav-pills justify-content-center">
+      <li className="nav-item"><Link to='/' className="nav-link" activeClassName="active">home</Link></li>
+      <li className="nav-item"><Link to='/films' className="nav-link" activeClassName="active">film list</Link></li>
+    </ul>
 
-    {props.children}
+    {/* ROUTER */}
+    <div className="Content">
+      {props.children}
+    </div>
 
   </div>
 );

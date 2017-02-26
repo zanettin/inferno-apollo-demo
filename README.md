@@ -30,6 +30,20 @@ this command starts a node server with live reload on `localhost:3000`
 This repo also contains the graphiQL interface to test your queries.
 Just navigate to `localhost:4000` in your browser to find the interface.
 
+## Server settings
+In `server/src/server/main.js` you'll find the node/express server.
+I've defined a tiny timeout to ensure, that you'll see the loading indicator. If you like to remove this timeout, just change the code to:
+```js
+// POST requests to /graphql should be handled by middleware
+app.post('/graphql', (req, res) => {
+  setCorsHeaders(res);
+  graphqlHTTP({
+    schema    : swapiSchema,
+    graphiql  : false,
+  })(req, res);
+});
+```
+
 ## Links
 - [inferno js](https://infernojs.org/)
 - [incompose](https://github.com/zanettin/incompose)

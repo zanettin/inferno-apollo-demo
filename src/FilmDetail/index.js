@@ -6,16 +6,32 @@ import {
   branch,
   renderComponent,
 } from 'incompose';
+import {Link} from 'inferno-router';
 import Loading from '../shared/Loading';
 import Error from '../shared/Error';
+import './styles.css';
 
 const FilmDetail = (props) => (
   <div>
-    <h1>Film Detail for id {props.data.node.id}</h1>
-    <div>Title: <strong>{props.data.node.title}</strong></div>
-    <div>Episode ID: <strong>{props.data.node.episodeID}</strong></div>
-    <div>Director: <strong>{props.data.node.director}</strong></div>
-    <div>Release Date: <strong>{props.data.node.releaseDate}</strong></div>
+    <div class="card">
+      <div class="card-header text-right">
+        <Link to="/films" className="btn btn-danger">close</Link>
+      </div>
+      <div class="card-block">
+        <h4 class="card-title">{props.data.node.title}</h4>
+        <p class="card-text">{props.data.node.openingCrawl}</p>
+      </div>
+      <ul class="list-group list-group-flush text-left">
+        <li class="list-group-item">
+          directed by&nbsp;<span className="Highlight">{props.data.node.director}</span>
+        </li>
+        <li class="list-group-item">
+          episode ID&nbsp;<span className="Highlight">{props.data.node.episodeID}</span>
+        </li>
+      </ul>
+    </div>
+
+    <hr className="Divider" />
   </div>
 );
 
@@ -29,6 +45,7 @@ const query = gql`
         episodeID
         director
         releaseDate
+        openingCrawl
       }
     }
   }

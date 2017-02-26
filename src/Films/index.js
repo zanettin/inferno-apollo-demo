@@ -9,7 +9,6 @@ import {
 import Item from './components/Item'
 import Loading from '../shared/Loading';
 import Error from '../shared/Error';
-import './list.css';
 
 // render a single film item by just passing its data node.
 const renderFilm = (node) => (
@@ -23,16 +22,19 @@ const renderFilm = (node) => (
 // branches are rendered.
 const List = (props) => (
   <div>
-    <h1>Film-List</h1>
-    <ul className="List">
+
+    {/* ROUTER */}
+    {props.children}
+
+    {/* RENDER FILMS */}
+    <div className="row">
       {
         props.data.allFilms &&
         props.data.allFilms.edges &&
         props.data.allFilms.edges.map(renderFilm)
       }
-    </ul>
-    <hr />
-    {props.children}
+    </div>
+
   </div>
 );
 

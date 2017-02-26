@@ -1,0 +1,8 @@
+.Card {
+  margin-bottom: 30px;
+}
+
+.Highlight {
+  display: block !important;
+  font-weight: bold;
+}

@@ -1,12 +1,8 @@
 import Inferno from 'inferno';
+import './styles.css';
 
 const Error = (props) => (
-  <div>
-    <h1>Oops!</h1>
-    <pre>
-      {props.data.error}
-    </pre>
-  </div>
+  <h3 className="text-center Wrapper">Oops!</h3>
 );
 
 export default Error;
