@@ -1,5 +1,3 @@
-import Inferno from 'inferno';
-
 export default ({width, height}) => {
     return (
         <svg version="1.0"

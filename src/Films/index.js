@@ -1,4 +1,3 @@
-import Inferno from 'inferno';
 import { graphql } from 'inferno-apollo';
 import gql from 'graphql-tag';
 import {

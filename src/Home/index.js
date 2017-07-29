@@ -1,4 +1,3 @@
-import Inferno from 'inferno';
 import './styles.css';
 
 const Home = () => (

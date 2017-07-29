@@ -1,4 +1,3 @@
-import Inferno from 'inferno';
 import {Link} from 'inferno-router';
 import Logo from '../logo';
 import ApolloLogo from '../logo-apollo.png';
